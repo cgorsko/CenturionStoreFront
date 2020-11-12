@@ -75,8 +75,8 @@ function ContentModalCtrl($scope, $modal) {
                 //content block 1
                 '<h4>Who do I Contact with Questions?</h4>',
                 '<p>',
-                'Please reach out to Chris Gorski at cgorski@stevensgroupweb.com.  You can also call ',
-                'him at (331) 209-2109.',
+                'Please reach out to our Customer Service Team at <a href="mailto:service@centurion-inc.com?subject=Rodda Paint" target="_blank">service@centurion-inc.com</a>.  You can also call ',
+                'us at (800) 323-2193.',
                 '</p>',
                 //Optional footer
                 '<div class="modal-footer">',
