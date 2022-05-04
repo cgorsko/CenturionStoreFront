@@ -25,7 +25,7 @@
                     <i class="fa fa-user"></i>
                 </div>
                 <div>
-                    <label ng-show="address.CompanyName">{{('Company' | r) + ' ' + ('Name' | r) | xlat}}</label>
+                    <label>{{('Company' | r) + ' ' + ('Name' | r) | xlat}}</label>
                     <input name="companyname" class="form-control" type="text" ng-model="address.CompanyName" autocomplete="off" placeholder="{{('Company' | r) + ' ' + ('Name' | r) | xlat}}" ng-disabled="address.IsCustEditable == false" />
                     <i class="fa fa-user"></i>
                 </div>
