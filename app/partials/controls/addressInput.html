@@ -15,12 +15,12 @@
                     <i class="fa fa-edit"></i>
                 </div>
                 <div>
-                    <label ng-show="address.FirstName || address.IsBilling" ng-class="{required: address.IsCustEditable != false}">{{('First' | r) + ' ' + ('Name' | r) | xlat}}</label>
-                    <input name="firstname" class="form-control" type="text" ng-model="address.FirstName" placeholder="{{('First' | r) + ' ' + ('Name' | r) | xlat}}" autocomplete="off" ng-required=address.IsCustEditable != false" ng-disabled="address.IsCustEditable == false" />
+                    <label ng-class="{required: address.IsCustEditable != false}">{{('First' | r) + ' ' + ('Name' | r) | xlat}}</label>
+                    <input name="firstname" class="form-control" type="text" ng-model="address.FirstName" placeholder="{{('First' | r) + ' ' + ('Name' | r) | xlat}}" autocomplete="off" ng-required="address.IsCustEditable != false" ng-disabled="address.IsCustEditable == false" />
                     <i class="fa fa-user"></i>
                 </div>
                 <div>
-                    <label ng-show="address.LastName || address.IsBilling" ng-class="{required: address.IsCustEditable != false}">{{('Last' | r) + ' ' + ('Name' | r) | xlat}}</label>
+                    <label ng-class="{required: address.IsCustEditable != false}">{{('Last' | r) + ' ' + ('Name' | r) | xlat}}</label>
                     <input name="lastname" class="form-control" type="text" ng-model="address.LastName" placeholder="{{('Last' | r) + ' ' + ('Name' | r) | xlat}}" autocomplete="off" ng-required="address.IsCustEditable != false" ng-disabled="address.IsCustEditable == false" />
                     <i class="fa fa-user"></i>
                 </div>
@@ -42,7 +42,7 @@
                     <i class="fa fa-map-marker"></i>
                 </div>
                 <div>
-                    <label ng-class="{'required': address.IsCustEditable != false}">{{'Suite/Apartment' | r | xlat}}</label>
+                    <label>{{'Suite/Apartment' | r | xlat}}</label>
                     <input name="street2" class="form-control" type="text" ng-model="address.Street2" placeholder="{{'Address Line 2' | r | xlat}}" autocomplete="off" ng-disabled="address.IsCustEditable == false" />
                     <i class="fa fa-map-marker"></i>
                 </div>
